@@ -100,11 +100,11 @@ EXAMPLES
 --------
 Preview duplicates in a holiday photos folder:
 
-  python main.py --source "C:\Users\vamsi\Pictures\Holiday2024" --dry-run
+  python main.py --source "C:\Users\Pictures\Holiday2024" --dry-run
 
 Clean up, moving duplicates to an external drive:
 
-  python main.py --source "C:\Users\vamsi\Pictures" \
+  python main.py --source "C:\Users\Pictures" \
                  --duplicates-dir "E:\DuplicatePhotos" \
                  --threshold 10
 
