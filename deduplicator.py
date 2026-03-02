@@ -136,6 +136,10 @@ def resolve_groups(
                 # Preserve the immediate parent folder name for traceability
                 dest_subdir = duplicates_dir / loser_path.parent.name
                 _safe_move(loser_path, dest_subdir)
+                # Move any sidecar files with the same stem (e.g. RAW alongside JPG)
+                for sidecar in loser_path.parent.glob(f"{loser_path.stem}.*"):
+                    if sidecar != loser_path and sidecar.is_file():
+                        _safe_move(sidecar, dest_subdir)
 
         decisions.append(Decision(
             winner=winner_path,

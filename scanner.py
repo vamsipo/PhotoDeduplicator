@@ -6,7 +6,7 @@ from typing import List, Set
 IMAGE_EXTENSIONS: Set[str] = {
     '.jpg', '.jpeg', '.png', '.tiff', '.tif',
     '.bmp', '.webp', '.heic', '.heif',
-    '.raw', '.cr2', '.nef', '.arw', '.dng', '.orf', '.rw2',
+    '.raw', '.cr2', '.nef', '.arw', '.dng', '.orf', '.rw2', '.raf',
 }
 
 
